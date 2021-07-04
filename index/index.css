@@ -9,7 +9,7 @@ body {
 .welcome {
   width: 100%;
   min-height: 616px;
-  background-image: url(/images/welcome-background2.png);
+  background-image: url(./images/welcome-background2.png);
   background-position: center;
   background-size: cover;
 }
