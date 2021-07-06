@@ -30,6 +30,7 @@ body {
 .welcome-container > h1 {
   font-size: 48px;
   margin: -10px;
+  letter-spacing: 1px;
 }
 .welcome-container > h2 {
   font-size: 32px;
@@ -155,6 +156,7 @@ body {
     font-family: "Poppins";
     font-size: 21px;
     text-decoration: none;
+    letter-spacing: 1px;
   }
 }
 
