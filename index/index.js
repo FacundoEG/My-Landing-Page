@@ -101,6 +101,7 @@ function importarServices() {
 
       crearServicios(contentfullServices);
     });
+  console.log("termine de importar");
 }
 
 function main() {
