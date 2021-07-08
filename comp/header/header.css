@@ -1,0 +1,126 @@
+.header-comp {
+  width: 100%;
+  min-height: 98px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+@media (min-width: 900px) {
+  .header-comp {
+    padding: 0px 2.3%;
+  }
+}
+
+.header-comp__logo {
+  height: 110px;
+  width: 110px;
+}
+
+.header-comp__window-menu {
+  display: none;
+  position: absolute;
+  border: solid 0.5px rgba(255, 255, 255, 0.527);
+  height: 430px;
+  background-color: #161616;
+  width: 100%;
+  right: 0;
+  left: 0;
+  top: 0;
+  flex-direction: column;
+}
+
+.header-comp__window-closebutton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  align-self: flex-end;
+  margin: 30px 17px;
+}
+
+.header-comp__window-closebutton > img {
+  height: 42px;
+  width: 42px;
+}
+
+.header-comp__window-menu-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.header-comp__window-menu-link > a {
+  color: white;
+  text-decoration: none;
+  font-size: 23px;
+  font-family: "Montserrat";
+  padding: 15px 15px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header-comp__window-menu-link > a:hover {
+  color: cornflowerblue;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (min-width: 900px) {
+  .header-comp__window-menu {
+    display: none;
+  }
+}
+
+.header-comp__hamburger-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 900px) {
+  .header-comp__logo {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media (min-width: 900px) {
+  .header-comp__hamburger-menu {
+    display: none;
+  }
+}
+
+.header-comp__hamburger-menu > img {
+  height: 36px;
+  width: 40px;
+}
+
+.header-comp__links-container {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .header-comp__links-container {
+    display: initial;
+    display: flex;
+    gap: 35px;
+  }
+}
+
+@media (min-width: 900px) {
+  .header-comp__links-container > a {
+    color: white;
+    font-family: "Poppins";
+    font-size: 21px;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+}
+
+@media (min-width: 900px) {
+  .header-comp__links-container > a:hover {
+    color: cornflowerblue;
+  }
+}

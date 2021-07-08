@@ -1,19 +1,3 @@
-function hambuguerMenuWindow() {
-  const hamburguerButtonEl = document.querySelector(
-    ".header-comp__hamburger-menu"
-  );
-  const hamburguerMenuEl = document.querySelector(".header-comp__window-menu");
-  const windowCloseButtonEl = document.querySelector(
-    ".header-comp__window-closebutton"
-  );
-  hamburguerButtonEl.addEventListener("click", () => {
-    hamburguerMenuEl.style.display = "flex";
-  });
-  windowCloseButtonEl.addEventListener("click", () => {
-    hamburguerMenuEl.style.display = "";
-  });
-}
-
 function importWelcomeContent() {
   fetch(
     "https://cdn.contentful.com/spaces/qrsguk0kca31/environments/master/entries?access_token=dbzToas8F8Td4jFrmeLd843c69EgYp9q0JJVOSR2jvk&content_type=welcome"
@@ -101,14 +85,17 @@ function importarServices() {
 
       crearServicios(contentfullServices);
     });
-  console.log("termine de importar");
 }
 
 function main() {
-  hambuguerMenuWindow();
+  const headerContainer = document.querySelector(".header-container");
+  const footerContainer = document.querySelector(".footer-container");
   importWelcomeContent();
   importAboutMeContent();
   importarServices();
+  insertHeader(headerContainer);
+  hambuguerMenuWindow();
+  insertFooter(footerContainer);
 }
 
 main();
