@@ -8,14 +8,14 @@ function insertHeader(element) {
    </button>
    <div class="header-comp__window-menu-link">
      <a href="">Portfolio</a>
-     <a href="">Mis Servicios</a>
+     <a href="./servicios.html">Mis Servicios</a>
      <a href="">Contacto</a>
    </div>
   </div>
   <div class="header-comp__menu">
     <div class="header-comp__links-container">
       <a href="">Portfolio</a>
-      <a href="">Mis Servicios</a>
+      <a href="./servicios.html">Mis Servicios</a>
       <a href="">Contacto</a>
     </div>
     <button class="header-comp__hamburger-menu">
