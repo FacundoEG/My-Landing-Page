@@ -14,7 +14,7 @@ body {
 
 @media (min-width: 900px) {
   .welcome {
-    background: linear-gradient(107.17deg, #000000 29.35%, #363779ad 78.73%);
+    background: linear-gradient(107.17deg, #000000 29.35%, #242552e5 78.73%);
     min-height: 600px;
   }
 }

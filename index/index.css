@@ -264,6 +264,11 @@ body {
   font-size: 16px;
   font-family: "Poppins";
   font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-form > button:active {
+  background: rgb(42, 74, 75);
 }
 
 /* Aca voy a importar parte del componente de contact para probar sin el js */

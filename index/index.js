@@ -87,6 +87,34 @@ function importarServices() {
     });
 }
 
+function sendFormData() {
+  const myContactForm = document.querySelector(".contact-form");
+  myContactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
+    const formDataFinal = {
+      Nombre: formData.get("nombre"),
+      Email: formData.get("email"),
+      Mensaje: formData.get("mensaje"),
+    };
+
+    const data = {
+      to: formDataFinal.Email,
+      message: formDataFinal.Mensaje,
+    };
+
+    fetch("https://apx-api.vercel.app/api/utils/dwf", {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: { "content-type": "application/json" },
+    })
+      .then((res) => res.json())
+      .catch((error) => console.error("Ocurrio un error!", error))
+      .then((res) => console.log("Salio todo bien!", res));
+  });
+}
+
 function main() {
   const headerContainer = document.querySelector(".header-container");
   const footerContainer = document.querySelector(".footer-container");
@@ -96,6 +124,7 @@ function main() {
   insertHeader(headerContainer);
   hambuguerMenuWindow();
   insertFooter(footerContainer);
+  sendFormData();
 }
 
 main();
