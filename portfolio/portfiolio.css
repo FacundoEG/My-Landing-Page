@@ -13,7 +13,7 @@ body {
 
 @media (min-width: 900px) {
   .welcome {
-    background: linear-gradient(107.17deg, #000000e1 29.35%, #295461 78.73%);
+    background: linear-gradient(107.17deg, #000000 29.35%, #212f4d 78.73%);
     min-height: 600px;
   }
 }
@@ -94,17 +94,18 @@ body {
 .contenedor-titulo {
   font-family: "Poppins", sans-serif;
   font-size: 24px;
-  padding: 20px 20px 0px 20px;
+  padding: 10px 25px 0px 20px;
   font-weight: bold;
   margin: 0;
 }
 
 .contenedor-descripcion {
   font-size: 15px;
-  padding: 15px 20px 0px;
+  padding: 10px 20px 0px;
   font-weight: normal;
   font-family: "Poppins", sans-serif;
   margin: 0px;
+  color: #dbdbdb;
 }
 
 .contenedor-ver-button {
@@ -115,7 +116,7 @@ body {
   text-decoration-line: underline;
   color: #51aff3;
   font-weight: bold;
-  padding: 15px 20px 20px;
+  padding: 5px 25px 15px;
 }
 
 .footer {

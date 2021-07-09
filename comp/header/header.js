@@ -9,14 +9,14 @@ function insertHeader(element) {
    <div class="header-comp__window-menu-link">
      <a href="./portfolio.html">Portfolio</a>
      <a href="./servicios.html">Mis Servicios</a>
-     <a href="">Contacto</a>
+     <a href="./contacto.html">Contacto</a>
    </div>
   </div>
   <div class="header-comp__menu">
     <div class="header-comp__links-container">
       <a href="./portfolio.html">Portfolio</a>
       <a href="./servicios.html">Mis Servicios</a>
-      <a href="">Contacto</a>
+      <a href="./contacto.html">Contacto</a>
     </div>
     <button class="header-comp__hamburger-menu">
       <img src="https://raw.githubusercontent.com/FacundoEG/desafio-dwf-m4/main/images/hamburguer-vector.png" class="header-comp__hamburger-logo">
