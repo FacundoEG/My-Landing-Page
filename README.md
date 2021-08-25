@@ -1,7 +1,7 @@
 # desafio-dwf-m4
 https://facundoeg.github.io/desafio-dwf-m4/
 
-Desafío final del modulo 4 sobre HTML y CSS.
+Desafío final del modulo 4 sobre Javascript en el navegador.
 
 BREAKPOINT: desde los 900px de ancho
 
