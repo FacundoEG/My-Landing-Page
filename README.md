@@ -1,5 +1,5 @@
 # desafio-dwf-m4
-https://facundoeg.github.io/desafio-dwf-m4/
+Link de acceso a la page: https://facundoeg.github.io/My-Landing-Page/
 
 Desafío final del modulo 4 sobre Javascript en el navegador para la carrera de Desarollo Web Fullstack en APXschool.
 
