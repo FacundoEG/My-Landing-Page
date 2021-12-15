@@ -1,7 +1,7 @@
 # desafio-dwf-m4
 https://facundoeg.github.io/desafio-dwf-m4/
 
-Desafío final del modulo 4 sobre Javascript en el navegador.
+Desafío final del modulo 4 sobre Javascript en el navegador para la carrera de Desarollo Web Fullstack en APXschool.
 
 BREAKPOINT: desde los 900px de ancho
 
