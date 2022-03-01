@@ -59,10 +59,17 @@ function crearContenedores(arrayData) {
   const descriptionEl = template.content.querySelector(
     ".contenedor-descripcion"
   );
-  const buttonEl = template.content.querySelector(".contenedor-ver-button");
+  const pageElement = template.content.querySelector(".page");
+  const gitElement = template.content.querySelector(".github");
 
   for (const obj of arrayData) {
-    buttonEl.setAttribute("href", obj.url);
+    const url = obj.url;
+    const trimmedUrl = url.split(" ");
+    const proyectLink = trimmedUrl[0];
+    const githubLink = trimmedUrl[1];
+
+    pageElement.setAttribute("href", proyectLink);
+    gitElement.setAttribute("href", githubLink);
     imageEl.setAttribute("src", obj.imagenUrl);
     titleEl.textContent = obj.titulo;
     descriptionEl.textContent = obj.descripcion;
