@@ -1,7 +1,7 @@
 function insertFooter(element) {
   const headerCompEl = document.createElement("header");
   headerCompEl.innerHTML = `<div class="footer-comp">
-    <img src="https://raw.githubusercontent.com/FacundoEG/desafio-dwf-m4/main/images/logo.png" class="footer-comp__logo">
+    <div class="footer-comp__logo-box"><span class="footer-comp__text" style="margin:0; text-decoration: none; cursor: default">Web diseñada   por: </span><img src="../../images/logo.png" class="footer-comp__logo"></div>
     <div class="footer-comp__media-box">
     <a href="https://www.instagram.com/__ansuz/" class="footer-comp__media-box-unit">
     <span class="footer-comp__text">Instagram</span>

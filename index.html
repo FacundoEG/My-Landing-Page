@@ -4,44 +4,53 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>INDEX</title>
+  <title>MY LANDING PAGE</title>
+
+  <link rel="icon shortcut" href="/images/world.png" type="image/x-icon">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./comp/header/header.css">
-  <link rel="stylesheet" href="./comp/contact/contact.css">
   <link rel="stylesheet" href="./comp/footer/footer.css">
   <link rel="stylesheet" href="./index/index.css">
   
 
   <script defer src="./comp/header/header.js"></script>
-  <script defer src="./comp/contact/contact.js"></script>
   <script defer src="./comp/footer/footer.js"></script>
   <script defer src="./index/index.js"></script>
 
 </head>
 <body>
   <main class="main">  
-  <section class="welcome">
+  <section class="welcome" id="main">
    <div class="header-container">
    </div>
    <div class="welcome-container">
-     <h1 class="welcome-container__title"></h1>
-     <h2 class="welcome-container__subtitle"></h2>
+     <h1 class="welcome-container__title">¡Hola! <span>Soy Facundo.</span></h1>
+     <h2 class="welcome-container__subtitle">Desarrollador Web Fullstack.</h2>
    </div>
   </section>
-  <section class="about-me">
+  <section class="about-me" id="about-me">
     <div class="about-me-container">
-      <img src="./images/foto-main.png" alt="" class="about-me-container__hero-img">
       <div class="about-me-container__text-cont">
         <h2 class="about-me__title"></h2>
         <p class="about-me__text"></p>
       </div>
+      <img src="./images/facuhero3.png" alt="" class="about-me-container__hero-img">
     </div>
   </section>
-  <section class="services">
+  <section class="experience">
+    <div class="experience-container">
+      <img class="experience-container__health-img">
+      <div class="experience-container__text-cont">
+        <h2 class="experience__title">Mi Experiencia</h2>
+        <p class="experience__text">Durante mas de 6 años trabajé dentro del area de la salud mental, mas precisamente en el acompañamiento terapeutico y la asistencia social. Esto me brindo muchos conocimientos acerca de la psicología y me ayudo a generar una empatía muy grande con las personas con las que comparto mi día a día.</p>
+      </div>
+    </div>
+  </section>
+  <section class="services" id="servicios">
     <div class="services-container">
       <h2>Mis servicios</h2>
      <div class="services-container__template-box">
@@ -57,7 +66,25 @@
     </div>
     </div>
   </section>
-  <section class="contact">
+  <section class="portfolio" id="portfolio">
+    <h2 class="portfolio-title">Mis proyectos</h2>
+    <p class="portfolio-p">Estos son algunos de los proyectos en los que estuve trabajando en los ultimos meses, sentite a gusto de probarlos o inclusive forkearlos y aportar para mejorarlos.</p>
+    <div class="portfolio-container">
+        <template id="portfolio-template">
+            <div class="portfolio-contenedores">
+            <img
+              class="contenedor-imagen"
+            />
+            <h5 class="contenedor-titulo"></h5>
+            <p class="contenedor-descripcion">
+            </p>
+            <a class="contenedor-ver-button">Ver más</a>
+          </div>
+        </template>
+    </div>
+    </div>
+  </section>
+  <section class="contact" id="contacto">
     <div class="contact-container">
     </div>
   </section>

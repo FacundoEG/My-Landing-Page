@@ -1,10 +1,18 @@
 .header-comp {
   width: 100%;
-  min-height: 98px;
+  height: 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  background: none;
+  transition: all 500ms ease-in;
+  position: fixed;
+}
+
+.scrolled {
+  background-color: #141414;
+  box-shadow: 0 3px 20px rgb(0, 0, 0);
 }
 
 @media (min-width: 900px) {
@@ -19,16 +27,21 @@
 }
 
 .header-comp__window-menu {
-  display: none;
-  position: absolute;
-  border: solid 0.5px rgba(255, 255, 255, 0.527);
-  height: 430px;
   background-color: #161616;
   width: 100%;
-  right: 0;
-  left: 0;
-  top: 0;
+  border-radius: 4px;
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  transition: right 1s ease-in-out;
+  right: -100%;
+  border: 1px solid #2c2c2c;
+}
+
+.active {
+  right: 0;
 }
 
 .header-comp__window-closebutton {
@@ -36,7 +49,13 @@
   border: none;
   cursor: pointer;
   align-self: flex-end;
-  margin: 30px 17px;
+  margin: 25px 17px 10px;
+}
+
+.header-comp__window-closebutton:active {
+  cursor: pointer;
+  filter: invert(62%) sepia(55%) saturate(13) hue-rotate(194deg) brightness(95%)
+    contrast(80%);
 }
 
 .header-comp__window-closebutton > img {
@@ -48,7 +67,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 20px 0px;
+  margin: 0px 0px 30px;
+  width: 100%;
 }
 
 .header-comp__window-menu-link > a {
@@ -57,9 +77,14 @@
   font-size: 23px;
   font-family: "Montserrat";
   padding: 15px 15px;
+  display: flex;
+  height: 71px;
   width: 100%;
   text-align: center;
-  margin-bottom: 20px;
+  transition: all 500ms ease-in;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-comp__window-menu-link > a:hover {
@@ -79,11 +104,9 @@
   cursor: pointer;
 }
 
-@media (min-width: 900px) {
-  .header-comp__logo {
-    height: 150px;
-    width: 150px;
-  }
+.header-comp__hamburger-menu:active {
+  filter: invert(62%) sepia(55%) saturate(13) hue-rotate(194deg) brightness(95%)
+    contrast(80%);
 }
 
 @media (min-width: 900px) {
@@ -93,7 +116,6 @@
 }
 
 .header-comp__hamburger-menu > img {
-  height: 36px;
   width: 40px;
 }
 
@@ -105,7 +127,7 @@
   .header-comp__links-container {
     display: initial;
     display: flex;
-    gap: 35px;
+    gap: 25px;
   }
 }
 
@@ -116,11 +138,16 @@
     font-size: 21px;
     text-decoration: none;
     letter-spacing: 1px;
+    border: 2px transparent solid;
+    transition: all 500ms ease-in;
+    padding: 5px 12px;
+    border-radius: 20px;
   }
 }
 
 @media (min-width: 900px) {
   .header-comp__links-container > a:hover {
     color: cornflowerblue;
+    border: 2px solid cornflowerblue;
   }
 }
