@@ -1,69 +1,27 @@
+.footer {
+  width: 100%;
+}
+
 .footer-comp {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #2c2c2c;
-  padding: 50px 80px;
-}
-
-@media (min-width: 900px) {
-  .footer-comp {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-.footer-comp__logo-box {
+  background-color: #040508;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  padding-top: 30px;
 }
 
 .footer-comp__logo {
-  height: 200px;
-  width: 200px;
+  height: 140px;
 }
 
-.footer-comp__media-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-@media (min-width: 900px) {
-  .footer-comp__media-box {
-    align-items: flex-end;
-  }
-}
-
-.footer-comp__media-box-unit {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  margin-bottom: 17px;
-}
-
-.footer-comp__text {
-  font-size: 24px;
+.footer-text {
+  font-size: 18px;
   font-family: "Poppins";
   font-weight: normal;
-  font-size: 16px;
-  color: #dbdbdb;
-  margin-right: 12px;
-}
-
-.footer-comp__text:hover {
-  text-decoration: underline;
-}
-
-.footer-comp__icon {
-  height: 32px;
-  width: 32px;
-}
-
-.footer-comp__media-box-unit:hover {
-  cursor: pointer;
-  filter: invert(62%) sepia(55%) saturate(13) hue-rotate(194deg) brightness(95%)
-    contrast(80%);
+  text-transform: uppercase;
+  margin: 0 auto;
+  color: white;
 }

@@ -138,8 +138,41 @@ function importarServices() {
 function insertContact(element) {
   const headerCompEl = document.createElement("header");
   headerCompEl.innerHTML = `<div class="contact-comp">  
-    <h2 class="contact-form__title">Escribime</h2>
-    <form class="contact-form">
+  <div class="contact-comp__media-box">
+  <h2 class="contact-form__title">Contacto</h2>
+
+  <div class="contact-box">
+  <span class="contact-box__title">Ubicación</span></a>
+  <a class="contact-comp__media-box-unit">
+  <img src="./images/location.png"  class="contact-comp__icon">
+  <span class="contact-comp__text">Quilmes, Buenos Aires.</span></a>
+  </div>
+
+  <div class="contact-box">
+  <span class="contact-box__title">Email</span></a>
+  <a class="contact-comp__media-box-unit">
+  <img src="./images/email.png"  class="contact-comp__icon">
+  <span class="contact-comp__text">F_E_G.93@hotmail.com</span></a>
+  </div>
+
+  <div class="contact-box">
+  <span class="contact-box__title">Linkedin</span></a>
+  <a  class="contact-comp__media-box-unit">
+  <img src="./images/linkedin.png"  class="contact-comp__icon">
+  <span class="contact-comp__text">Linkedin</span></a>
+  </div>
+
+  <div class="contact-box">
+  <span class="contact-box__title">Github</span></a>
+  <a href="https://github.com/FacundoEG" class="contact-comp__media-box-unit">
+  <img src="./images/github-vector.png"  class="contact-comp__icon">
+  <span class="contact-comp__text">https://github.com/FacundoEG</span></a>
+  </div>
+
+   </div>
+
+   <form class="contact-form">
+   <h2 class="contact-form__title">Escribime</h2>
     <label class="contact-form__label">
     <span>NOMBRE</span>
     <input name="nombre" type="text" class="contact-form__input">
