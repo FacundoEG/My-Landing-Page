@@ -414,6 +414,10 @@ body {
   width: 100px;
 }
 
+.frameworks img {
+  height: 45px;
+}
+
 .frameworks td:hover {
   background-color: #33435c;
 }
