@@ -157,16 +157,16 @@ function insertContact(element) {
 
   <div class="contact-box">
   <span class="contact-box__title">Linkedin</span></a>
-  <a  class="contact-comp__media-box-unit">
+  <a href="https://www.linkedin.com/in/fegdev" class="contact-comp__media-box-unit">
   <img src="./images/linkedin.png"  class="contact-comp__icon">
-  <span class="contact-comp__text">Linkedin</span></a>
+  <span class="contact-comp__text clickeable">https://www.linkedin.com/in/fegdev</span></a>
   </div>
 
   <div class="contact-box">
   <span class="contact-box__title">Github</span></a>
   <a href="https://github.com/FacundoEG" class="contact-comp__media-box-unit">
   <img src="./images/github-vector.png"  class="contact-comp__icon">
-  <span class="contact-comp__text">https://github.com/FacundoEG</span></a>
+  <span class="contact-comp__text clickeable">https://github.com/FacundoEG</span></a>
   </div>
 
    </div>
