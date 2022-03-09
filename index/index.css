@@ -311,7 +311,7 @@ body {
 }
 
 .services-container {
-  padding: 30px 40px 70px;
+  padding: 30px 40px 100px;
 }
 
 .services-container > h2 {
@@ -319,7 +319,7 @@ body {
   font-family: "Montserrat";
   font-size: 32px;
   font-weight: bold;
-  padding: 50px 0px 20px 0px;
+  padding: 50px 0px 10px 0px;
   margin: 0;
   text-align: center;
 }
@@ -381,6 +381,43 @@ body {
   margin: 0;
 }
 
+.frameworks {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  justify-content: center;
+}
+
+.frameworks-table {
+  margin: 0 auto;
+}
+
+.services-p {
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  align-self: center;
+  text-align: center;
+  width: 100%;
+  max-width: 550px;
+  padding-bottom: 20px;
+}
+
+.frameworks td {
+  background-color: #232e3f;
+  transition: background-color 400ms ease-in;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  outline: 1px solid black;
+  color: white;
+  min-height: 32px;
+  padding: 15px 0px;
+  width: 100px;
+}
+
+.frameworks td:hover {
+  background-color: #33435c;
+}
+
 .reverse {
   flex-direction: row-reverse;
 }
@@ -437,6 +474,12 @@ body {
     flex-wrap: wrap;
     gap: 5%;
     padding-bottom: 0px;
+  }
+}
+
+@media (min-width: 1590px) {
+  .portfolio-container {
+    padding: 30px 300px 20px;
   }
 }
 
