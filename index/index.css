@@ -464,20 +464,46 @@ body {
 .portfolio-container {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  width: 100%;
+  width: 80%;
+  max-width: 400px;
   margin: 0 auto;
-  padding: 30px 40px 20px;
+  max-width: 400px;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.portfolio-container::-webkit-scrollbar {
+  width: 10px;
+  height: 8px;
+}
+
+.portfolio-container::-webkit-scrollbar-thumb {
+  background-color: #c7c7c757;
+  border-radius: 30px;
+}
+
+.portfolio-container::-webkit-scrollbar-thumb:hover {
+  background-color: #c7c7c7dc;
+  border-radius: 30px;
+}
+
+.portfolio-container::-webkit-scrollbar-track {
+  background-color: #040508;
 }
 
 @media (min-width: 900px) {
   .portfolio-container {
-    padding-top: 20px;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    max-width: none;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 5%;
-    padding-bottom: 0px;
+    padding: 20px 40px 0px;
   }
 }
 
@@ -490,17 +516,26 @@ body {
 .portfolio-contenedores {
   background-color: #111e1f;
   text-decoration: none;
-  box-shadow: 0 0 10px rgb(11, 20, 14);
+  box-shadow: 0 0 10px rgb(11 20 14);
   color: white;
   border: 2px solid transparent;
-  width: 100%;
-  max-width: 450px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   margin-bottom: 60px;
   transition: all 500ms ease-in;
   cursor: default;
+  min-width: 100%;
+  scroll-snap-align: start;
+}
+
+@media (min-width: 900px) {
+  .portfolio-contenedores {
+    min-width: 300px;
+    border-radius: 20px;
+    max-width: 450px;
+    scroll-snap-align: none;
+  }
 }
 
 .portfolio-contenedores:hover {
