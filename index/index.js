@@ -157,7 +157,7 @@ function insertContact(element) {
 
   <div class="contact-box">
   <span class="contact-box__title">Linkedin</span></a>
-  <a href="https://www.linkedin.com/in/fegdev" class="contact-comp__media-box-unit">
+  <a href="https://www.linkedin.com/in/facundoeg-dev" class="contact-comp__media-box-unit">
   <img src="./images/linkedin.png"  class="contact-comp__icon">
   <span class="contact-comp__text clickeable">https://www.linkedin.com/in/fegdev</span></a>
   </div>
@@ -175,10 +175,10 @@ function insertContact(element) {
    <h2 class="contact-form__title">Escribime</h2>
     <label class="contact-form__label">
     <span>NOMBRE</span>
-    <input name="nombre" type="text" class="contact-form__input">
+    <input name="nombre" type="text" autocomplete="off" class="contact-form__input">
     </label>
     <label class="contact-form__label">EMAIL
-    <input name="email" type="text" type="email" class="contact-form__input"></label>
+    <input name="email" type="text" autocomplete="off" type="email" class="contact-form__input"></label>
     <label class="contact-form__label">MENSAJE
     <textarea name="mensaje" class="contact-form__textarea"></textarea>
     </label>
