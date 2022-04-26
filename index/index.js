@@ -159,7 +159,7 @@ function insertContact(element) {
   <span class="contact-box__title">Linkedin</span></a>
   <a href="https://www.linkedin.com/in/facundoeg-dev" class="contact-comp__media-box-unit">
   <img src="./images/linkedin.png"  class="contact-comp__icon">
-  <span class="contact-comp__text clickeable">https://www.linkedin.com/in/fegdev</span></a>
+  <span class="contact-comp__text clickeable">https://www.linkedin.com/in/facundoeg-dev</span></a>
   </div>
 
   <div class="contact-box">
